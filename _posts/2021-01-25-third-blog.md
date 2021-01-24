@@ -1,8 +1,11 @@
 ---
-title: "3. Algorithm"
+title: "3. Algorithm_1""
 categories: Third blog
 tags: blog
 ---
+
+백준 알고리즘 - 설탕 배달
+
 
 코드: 
 ```C++ 

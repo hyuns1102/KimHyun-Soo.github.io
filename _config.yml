@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "Korea"
-title                    : "hyunsoo's practice"
+title                    : "hyunsoo"
 title_separator          : "나의 기록"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyun Soo"

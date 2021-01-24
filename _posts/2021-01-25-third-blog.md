@@ -6,7 +6,10 @@ tags:
   - blog
 ---
 
-```
+
+
+코드: 
+```C++ 
 #include <iostream>
 using namespace std;
 

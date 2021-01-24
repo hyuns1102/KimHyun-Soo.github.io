@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "3. Algorithm"
 categories: Third blog
 tags: blog

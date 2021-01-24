@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "1. github & Jekyll"
 categories: First blog
 tags: blog

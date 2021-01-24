@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "2. second post"
 categories: Second blog
 tags: blog

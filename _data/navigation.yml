@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: https://hyuns1102.github.io/
- # - title: "About me"
- #    url: /About/ 
+  - title: "About me"
+     url: /About/
   - title: "Post"
     url: /year-archive/
 

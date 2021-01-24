@@ -1,5 +1,5 @@
 ---
-title: "second post"
+title: "Hi, this is hyunsoo's second blog"
 categories:
   - First blog
 tags:

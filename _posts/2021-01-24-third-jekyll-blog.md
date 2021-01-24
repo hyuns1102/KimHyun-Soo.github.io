@@ -1,7 +1,7 @@
 ---
-title: "Thrid_sugar delivery"
+title: "Hi, this is hyunsoo's second blog"
 categories:
-  - blog
+  - First blog
 tags:
   - blog
 ---
@@ -10,9 +10,7 @@ tags:
 
 
 ​```C++
-
-
-include <iostream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -42,5 +40,4 @@ int main()
 
 	cout << result; 
 }
-
 ​```

@@ -1,5 +1,5 @@
 ---
-title: "Welcome, studying computers"
+title: "Welcome, I study about github & Jekyll"
 categories:
   - First blog
 tags:

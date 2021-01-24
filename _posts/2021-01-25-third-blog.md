@@ -1,12 +1,9 @@
 ---
+layout: post
 title: "3. Algorithm"
-categories:
-  - First blog
-tags:
-  - blog
+categories: Third blog
+tags: blog
 ---
-
-
 
 코드: 
 ```C++ 

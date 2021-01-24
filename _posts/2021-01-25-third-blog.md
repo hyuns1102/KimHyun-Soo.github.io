@@ -1,5 +1,5 @@
 ---
-title: "3. Algorithm_1""
+title: "3. Algorithm_1"
 categories: Third blog
 tags: blog
 ---

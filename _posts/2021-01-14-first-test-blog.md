@@ -7,17 +7,17 @@ tags:
 ---
 
 
-[Post 하는 법 알려주는 링크]를 통해 알아보자. 영어는 직접 해석하면서 하자.
+[Post 하는 법 알려주는 링크] 를 통해 알아보자. 영어는 알아서 해석하기~
 
 
-Jekyll also offers powerful support for code snippets:
+코드 표현 :
 ​```python
 def print_hi(name):
   print("hello", name)
 print_hi('Tom')
 ​```
 
-링크 거는 법
+참고 사항:
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

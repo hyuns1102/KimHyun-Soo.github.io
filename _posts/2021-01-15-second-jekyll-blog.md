@@ -10,7 +10,6 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-겨우 느낌을 알았다!
 
 
 ​```python

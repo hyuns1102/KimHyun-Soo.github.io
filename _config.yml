@@ -10,14 +10,14 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "Korea"
-title                    : "hyunsoo"
-title_separator          : "나의 기록"
+locale                   : "ko"
+title                    : "Everything is good"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyun Soo"
 description              : "An amazing website."
@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : "Hyunsoo Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/resume_1.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Stay hungry, Stay foolish"
   location         : "Seoul, Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "hyuns9411@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -113,10 +113,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/hyuns1102"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/hyun_s12/"
 
 # Site Footer
 footer:
@@ -273,7 +273,8 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: archive
+      show_date: true
+      layout: single
       author_profile: true
       read_time: true
       comments: # true

@@ -1,6 +1,6 @@
 ---
-title: "2. second post"
-categories: Second blog
+title: "* second post"
+categories: 2 blog
 tags: blog
 ---
 

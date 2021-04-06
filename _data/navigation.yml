@@ -20,6 +20,10 @@ main:
   - title: "Posts"
     url: /year-archive/
 
+  - title: "Javascript"
+    url: /javaScript/
+
+
   # - title: "Categories"
   #   url: /categories/
 

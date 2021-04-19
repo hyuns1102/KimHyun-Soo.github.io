@@ -1,8 +1,10 @@
 ---
 title: "* kokoa clone-1"
-categories: CSS
-tags: blog CSS
+categories: HTML/CSS
+tags: blog HTML CSS
 published: false
+
+toc: true
 ---
 
 ## kokoa clone-1
@@ -47,7 +49,7 @@ url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&di
 
 CSS hack !(기술)
 
-이상하지만 잘 작동된다. <br/>
+이상하지만 잘 작동된다. <br/><br/>
 
 css hack (justify-content : space-between 대신 사용이 가능하다. )
 
@@ -55,7 +57,7 @@ css hack (justify-content : space-between 대신 사용이 가능하다. )
 - 1 상위 박스 : justify-content: center; -중앙으로 몰림
 - 2 내부 박스 범위 : width: 33%; -왼쪽으로 몰려서 범위 벌어짐, 왼쪽 위치할 박스는 왼쪽에 붙어서 정렬됨
 - 3 중앙에 위치할 박스 : display: flex; justify-content: center; -중앙에 위치할 박스만 중앙에 위치함
-- 4 오른쪽에 정렬할 박스 : _display_: flex; _justify-content_: flex-end; _align-items_: center; -오른쪽에 붙어서 정렬됨
+- 4 오른쪽에 정렬할 박스 : _display_: flex; _justify-content_: flex-end; _align-items_: center; -오른쪽에 붙어서 정렬됨<br/><br/>
 
 #### 6.5 ~ Log-in finish
 
@@ -74,6 +76,8 @@ css hack (justify-content : space-between 대신 사용이 가능하다. )
     주소줄에는 ?name=value&name=value 형태로 나타난다.
 
   - post 방식은 입력된 내용의 크기에 제한을 받지 않고 입력한 내용이 노출되지 않기 때문에 회원가입, 로그인 시 등에 많이 사용된다.
+
+<br/>
 
 #### log-in 파트 마무리
 

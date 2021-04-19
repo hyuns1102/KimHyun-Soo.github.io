@@ -1,8 +1,11 @@
 ---
 title: "* kokoa clone-2"
-categories: CSS
-tags: blog CSS
+categories: HTML/CSS
+tags: blog HTML CSS
 published: false
+
+toc: true
+toc_sticky: true
 ---
 
 ## kokoa clone-2
@@ -27,11 +30,13 @@ published: false
  - _box-sizing: border-box_
  - 문제의 발단은 list를 가지고 있는 nav 태그가 있는데 이 박스 줄을 <br/>
 가장 밑으로 내리려고 다음과 같이
+
 ```html
 position: fixed
 bottom: 0 
 width: 100%
 ```
+
 를 했다.
 
 그런데 가장 바깥쪽의 아이콘이 보이지 않았다. 문제는 다음 그림과 같다.
@@ -51,14 +56,15 @@ width: 100%
  우리는 박스의 모양을 그대로 유지하겠다 라는 뜻을 가진 box-sizing: border-box
 을 이용한다.
 
-
-
+<br/>
 
 #### 6.13
 
 - span은 width, height 가 적용이 안된다. 왜 ? span은 inline 타입의 element이기 때문이다.
 - 원을 만들고 싶을 땐, width의 반만큼만 적용하자.
 - absolute는 가장 가까운 relative 조상에 맞춰 움직인다. 없으면 body까지 올라감
+
+<br/>
 
 #### 6.14, 6.16
 

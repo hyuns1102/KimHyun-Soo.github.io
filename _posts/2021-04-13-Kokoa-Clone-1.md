@@ -1,5 +1,5 @@
 ---
-title: "* kokoa clone-1"
+title: "kokoa clone-1"
 categories: HTML/CSS
 tags: blog HTML CSS
 published: false

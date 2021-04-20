@@ -27,3 +27,6 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# My Test Post
+_posts/2021-04-19-Test.md

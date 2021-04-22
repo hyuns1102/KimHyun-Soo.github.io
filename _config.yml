@@ -16,9 +16,9 @@ minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon"
 
 # Site Settings
 locale: "ko"
-title: "Everything is good"
+title: "Love yourself"
 title_separator: "|"
-subtitle: # site tagline that appears below site title in masthead
+subtitle: Be good # site tagline that appears below site title in masthead
 name: "Hyun Soo"
 description: "An amazing website."
 url: "http://hyuns1102.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -94,28 +94,28 @@ analytics:
 author:
   name: "Hyunsoo Kim"
   avatar: /assets/images/myimage.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Stay hungry, Stay foolish"
+  bio: "Learn, Run"
   location: "Seoul, Korea"
-  email:
+  email: hyuns9411@gmail.com
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "hyuns9411@gmail.com"
+      icon: "far fa-envelope"
+      # url: "hyuns9411@gmail.com"
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      # icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      # icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      # icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/hyuns1102"
+      # icon: "fab fa-fw fa-github"
+      # url: "https://github.com/hyuns1102"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/hyun_s12/"
+      # icon: "fab fa-fw fa-instagram"
+      # url: "https://www.instagram.com/hyun_s12/"
 
 # Site Footer
 footer:
@@ -128,16 +128,16 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/hyuns1102"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/hyun_s12/"
 
 # Reading Files
 include:
@@ -266,7 +266,8 @@ defaults:
       show_date: true
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
+      # sidebar_main: true

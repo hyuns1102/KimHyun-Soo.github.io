@@ -1,11 +1,9 @@
 ---
 title: "kokoa clone-3"
-categories: HTML/CSS
+categories: htmlcss
 tags: blog HTML CSS
 published: false
 
-toc: true
-toc_sticky: true
 ---
 
 ## kokoa clone-3

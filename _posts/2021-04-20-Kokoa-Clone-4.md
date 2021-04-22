@@ -1,9 +1,8 @@
 ---
 title: "kokoa clone-4"
-categories: HTML/CSS
+categories: htmlcss
 tags: blog HTML CSS
 published: false
-
 ---
 
 ## kokoa clone-4
@@ -75,7 +74,6 @@ Chat screen
    ```
 
 - chat 내에 reply바에서 Input에 focus가 됐을 때,
-
   focus-within : 
   원하는 클래스 내부에 focus를 받은 후에 다른 클래스를 동작시키고 싶을 때
   ```css
@@ -84,9 +82,9 @@ Chat screen
   } 
   ```
 
-- 문제: 애니메이션을 했는데 왜  이 button 이 자꾸 밑에서 멈칫 거리다가 사라지는 현상을 볼 수 있었다.
-  이 현상을 사라지게 하기 위해, 코드를 살펴봤지만 아무것도 못 찾았다.
-  해결: width 값이 바뀔 때, 위치가 변경되는 것을 보고 position에 문제가 있는 것을 봤다. 
+- 문제 : 애니메이션을 했는데 왜  이 button 이 자꾸 밑에서 멈칫 거리다가 사라지는 현상을 볼 수 있었다.
+  이 현상을 사라지게 하기 위해, 코드를 살펴봤지만 아무것도 못 찾았다. <br/>
+  해결 : width 값이 바뀔 때, 위치가 변경되는 것을 보고 position에 문제가 있는 것을 봤다. 
   (한 30분은 쳐다본듯.. )
   absolute position을 정해주면 relative position에 대해 위치를 지정해주자. top:0px right:0px 
 
@@ -96,9 +94,9 @@ Chat screen
 
 > animation: hideSplashScreen 1s ease-in-out __forwards__;
 >
-> will-change: transform;
+> __will-change__ : transform;
 >
-> animation-delay : animation을 잠깐 멈춤.
+> __animation-delay__ : animation을 잠깐 멈춤.
 >
-> focus-within : 클래스 내부에 focus를 받은 후에 다른 클래스 동작
+> __focus-within__ : 클래스 내부에 focus를 받은 후에 다른 클래스 동작
 <!-- prettier-ignore-end -->

@@ -14,6 +14,9 @@
 #   #   url: /sitemap/
 
 main:
+  - title: "Home"
+    url: https://hyuns1102.github.io/
+
   - title: "About"
     url: /About/
 
@@ -23,8 +26,8 @@ main:
   # - title: "Javascript"
   #   url: /javaScript/
 
-  - title: "Categories"
-    url: /categories/
+  # - title: "Categories"
+  #   url: /categories/
 
   # - title: "Tags"
   #   url: /tags/
@@ -35,7 +38,7 @@ main:
   # - title: "Collections"
   #   url: /collection-archive/
 
-  - title: "Another blog"
+  - title: "Blog"
     url: https://blog.naver.com/hyuns_1102
 
 #Test

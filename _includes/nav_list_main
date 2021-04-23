@@ -45,6 +45,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "githubBlog" %}
+                        <li><a href="/categories/githubBlog" class=""> Github Blog ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             {% comment %} <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "aaaa" %}

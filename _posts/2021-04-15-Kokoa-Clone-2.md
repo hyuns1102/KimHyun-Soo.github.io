@@ -40,17 +40,17 @@ width: 100%
 
 그런데 가장 바깥쪽의 아이콘이 보이지 않았다. 문제는 다음 그림과 같다.
 
-![s1](/assets/Clone-images/img1.png){: .align-center width="30%" height="30%"}
+![s1](/assets/images/clone-Images/img1.png){: .align-center width="30%" height="30%"}
 
 - 이 문제를 해결하려면 css에 대한 이해가 필요하다. <br>
   css는 프로그래머가 박스를 만들때 200px 를 주고 padding 50px를 줬다면, 이렇게 된다.
-![s2](/assets/Clone-images/img2.png){: .align-center width="40%" height="40%"}
+![s2](/assets/images/clone-Images/img2.png){: .align-center width="40%" height="40%"}
 
 - 우리에게 이 모습은 이렇게 보여지나, css는 박스를 200으로 유지하려고 한다.
-![s3](/assets/Clone-images/img3.png){: .align-center width="40%" height="40%"}
+![s3](/assets/images/clone-Images/img3.png){: .align-center width="40%" height="40%"}
 
 - 그래서 밑에처럼 박스가 늘어나는 것처럼 보인다. 따라서 이것을 잡아주기 위해
-![s4](/assets/Clone-images/img4.png){: .align-center width="40%" height="40%"}
+![s4](/assets/images/clone-Images/img4.png){: .align-center width="40%" height="40%"}
  
  우리는 박스의 모양을 그대로 유지하겠다 라는 뜻을 가진 box-sizing: border-box
 을 이용한다.

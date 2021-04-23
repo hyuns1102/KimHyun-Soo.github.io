@@ -14,8 +14,8 @@
 #   #   url: /sitemap/
 
 main:
-  - title: "Home"
-    url: https://hyuns1102.github.io/
+  # - title: "Home"
+  #   url: https://hyuns1102.github.io/
 
   - title: "About"
     url: /About/

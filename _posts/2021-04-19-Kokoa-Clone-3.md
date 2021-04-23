@@ -24,7 +24,7 @@ Chats screen
 - 다음과 같이 폴더로 분리해서 사용할 수 있도록 한다.
 - 폴더로 분리 후에는 항상 @import 해줄 것!
 
-![s1](/assets/Clone-images/img5.png)
+![s1](/assets/images/clone-Images/img5.png)
 
 #### 6. 21 ~ 6. 24
 

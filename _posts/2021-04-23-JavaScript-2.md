@@ -6,7 +6,7 @@ published: true
 
 ---
 
-## Javascript
+## Javascript - Time
 
 ---
 

@@ -144,8 +144,10 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
-$x-large: 1280px !default;
+$x-large_r: 1280px !default;
+$x-large: 1600px !default;  // 화면 너비 최대 1536px 까지 유지 (내 노트북 기준)
 $max-width: $x-large !default;
+
 
 /*
    Grid

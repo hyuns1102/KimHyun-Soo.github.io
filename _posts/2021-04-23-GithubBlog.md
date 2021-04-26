@@ -42,5 +42,5 @@ published: true
 4. liquid 문법에서 page.[name], site.[name], categories.[name] 은 무슨 기준으로 참조하는 것인가? <br>
 	yml을 참조해서 가져오는 경우도 있는거 같은데 어떻게 연결한 것인가? <br>
 
-5. {{% %}} 이거 왜 안됨..? 
+5. 이거 왜 안됨..? 
 

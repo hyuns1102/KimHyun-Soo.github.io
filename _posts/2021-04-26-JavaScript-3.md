@@ -81,5 +81,3 @@ JSON (JavaScript Object Notation) -> JavaScript가 데이터를 다룰 수 있�
 >javascript 데이터는 JSON.stringfy를 통해 string >데이터로 바꿔준다. <br>
 >
 >localstroage데이터는 JSON.parse를 통해 javascript 데이터로 >바꿔준다.<br>
-
-

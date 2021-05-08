@@ -26,8 +26,8 @@ main:
   # - title: "Javascript"
   #   url: /javaScript/
 
-  # - title: "Categories"
-  #   url: /categories/
+  - title: "Categories"
+    url: /categories/
 
   # - title: "Tags"
   #   url: /tags/

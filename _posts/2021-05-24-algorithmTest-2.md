@@ -1,5 +1,5 @@
 ---
-title: "[이코테 2021] 알고리즘 경향 분석 및 파이썬 문법"
+title: "[이코테 2021] 알고리즘 경향 분석 및 파이썬 문법 - 2"
 categories: codingtest
 tags: python
 published: true
@@ -149,13 +149,13 @@ else:
     print("-10 > a")
 ```
 
-### 연산자
+### 조건문 - 연산자
 
 - 비교 연산자, 논리 연산자(and, or, not) 사용 가능
 - in 연산자와 not in 연산자
   - 리스트, 튜플, 문자열, 딕셔너리 모두 사용 가능
 
-### pass 키워드
+### 조건문 - pass 키워드
 
 - C++의 coninue랑 비슷하다. 조건 안에서 무시한다.
 
@@ -168,7 +168,7 @@ elif a >= -10:
     pass
 ```
 
-### 부등식
+### 조건문 - 부등식
 
 - 대수학의 부등식을 그대로 사용할 수 있습니다.
 
@@ -182,3 +182,54 @@ elif 20<= a and a < 25:
 else:
     print("good")
 ```
+
+### 반복문 - while문
+
+- 예제 1부터 9까지 홀수의 합 구하기
+
+```python
+i = 0
+s = 0
+while i <= 9:
+    if i % 2 == 1:
+      s += i
+    i+=1
+print(result)
+```
+
+- 무한 루프 조심하기, break 구문 사용 가능
+
+### 반복문 - for문
+
+- 첫 번째 인덱스부터 차례대로 하나씩 방문
+- range(), 리스트, 튜플 사용가능
+
+```python
+array = [1,2,3,4,5]
+for x in array:
+  print(x)
+```
+
+- range(첫번째 값, 끝 값-1, 더하는 수)
+
+```python
+result = 0
+for i in range(1,10):
+    result += i
+print(result)
+```
+
+- coninue, break 키워드 사용 가능
+
+- 예제) **if문에서 in을 써서 안에 수가 존재하는지 확인 가능 - 유용함!**
+
+  ```python
+  scores = [90, 85, 77, 65, 97]
+  cheating_student_list = {2,4}
+
+  for i in range(5):
+      if i+1 in cheating_student_list:
+          continue
+      if scores[i] >= 80:
+          print(i+1, "번 학생은 합격입니다.")
+  ```

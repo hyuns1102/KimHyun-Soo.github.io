@@ -54,6 +54,14 @@
                 {% endfor %}
             </ul>
 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "codeup" %}
+                        <li><a href="/categories/codeup" class=""> [코드업]-기초100제 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Git/Github</span>
             <ul>
                 {% for category in site.categories %}

@@ -1,5 +1,5 @@
 ---
-title: "코드업-기초100제"
+title: "코드업 기초100제"
 layout: archive
 permalink: categories/codeup
 author_profile: true

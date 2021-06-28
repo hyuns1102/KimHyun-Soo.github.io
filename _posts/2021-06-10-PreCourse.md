@@ -1,6 +1,6 @@
 ---
-title: "네이버 부스트 캠프 - Pre Course"
-categories: Codingtest
+title: "[네이버 부스트 캠프] AI Pre Course"
+categories: codingtest
 tags: python
 published: true
 ---

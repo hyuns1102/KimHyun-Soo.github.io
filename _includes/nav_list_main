@@ -41,7 +41,15 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "BOJ" %}
-                        <li><a href="/categories/BOJ" class=""> 백준 (with C++, Python) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/BOJ" class=""> [백준] (with C++, Python) ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "programmers" %}
+                        <li><a href="/categories/programmers" class=""> [프로그래머스] (with Python) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -65,18 +73,12 @@
         <span class="nav__sub-title">Git/Github</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Git" %}
+                    {% if category[0] == "git" %}
                         <li><a href="/categories/git" class=""> Git/Github ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "githubBlog" %}
-                        <li><a href="/categories/githubBlog" class=""> Github Blog ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
             {% comment %} <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "aaaa" %}

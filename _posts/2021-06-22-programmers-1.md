@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 삼각달팽이 & 역삼각달팽이"
-categories: BOJ
-tags: BOJ python DFS BFS
+categories: programmers
+tags: programmers python DFS BFS
 published: true
 ---
 

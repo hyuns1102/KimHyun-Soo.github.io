@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 완주하지 못한 선수"
 categories: programmers
-tags: programmers python DFS BFS
+tags: programmers python hash
 published: true
 ---
 
@@ -9,7 +9,7 @@ published: true
 
 ### 문제
 
-링크 : [프로그래머스](https://programmers.co.kr/learn/courses/30/lessons/43165)
+링크 : [프로그래머스](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 ---
 
@@ -79,10 +79,32 @@ dict를 이용할 때,
 값 : dic.values()  
 이렇게 생각하자.  
 <br>
-Counter는 dict 자료형으로 값들의 개수를 세어서 리턴해준다.  
-이 때, 값들이 위치한 정보는 자료형의 종류의 관계가 없다.  
-0, 음수 값도 만들 수 있다.  
+
+Counter는 dict 자료형으로 값들의 개수를 세어서 리턴해준다.
+이 때, 값의 원래 배열 종류와 관계없이 만들 수 있다.  
+Counter 간에 합과 차가 가능하다.  
+0, 음수 값도 만들 수 있다.
+
+```python
+from collections import Counter
+array = [11,11,22,22,3,4,5]
+c = Counter.array
+print(c)
+# Counter({11: 2, 22: 2, 3: 1, 4: 1, 5: 1})
+```
+
 <br>
+
 hash()는 dict에서 key값을 빠르게 찾기 위해 쓰인다.  
 key값의 주소 값을 나타내주어 접근을 빠르게 할 수 있다.  
+key값이 숫자라면 주소 값 = 숫자 이다.  
 여기서는 중복을 고려해서 주소 값들을 모두 더하고 빼주는 것으로 나머지를 찾았다.
+
+```python
+array_3 = ["hi", "my", 2, 3]
+D = {}
+for i in range(len(array_3)):
+    D[hash(array_3[i])] = array_3[i]
+print(D)
+# {864452902972903991: 'hi', -9128108481256874222: 'my', 2: 2, 3: 3}
+```

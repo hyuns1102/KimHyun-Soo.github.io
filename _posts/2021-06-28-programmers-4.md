@@ -13,10 +13,6 @@ published: true
 
 ---
 
-<br/><br/>
-
----
-
 ### 풀이
 
 문제는 컴퓨터가 서로 연결되어 있을 때, 네트워크의 개수를 파악하는 문제이다.  
@@ -112,13 +108,13 @@ bfs에서는 deque를 이용해서 문제를 풀었다. 각 정보를 '깊이'�
 순서도를 파악해서 완벽하게 내 것으로 만들어야 하는 게 필요하다는 것을 느꼈다.  
 <br>
 
-> deque 는 좌우가 뚫리면서 이어져있을 수도 있는 queue라고 생각하자. (양방향 큐이자 선입선출의 방식을 사용한다.)
+> deque 는 좌우가 뚫리면서 이어져있을 수도 있는 queue라고 생각하자. (양방향 큐이자 선입선출의 방식을 사용한다.)  
 > method는 다음과 같다.  
-> deque.append(item) : item을 오른쪽에 넣는다.
-> deque.appendleft(item) : item을 왼쪽에 넣는다.
-> deque.pop() : 맨 오른쪽 item을 리턴하는 동시에 삭제한다.
-> deque.popleft() : 맨 왼쪽 item을 리턴하는 동시에 삭제한다.
-> deque.extend(array) : 맨 오른쪽에 리스트의 요소들을 순회하면서 추가한다.
-> deque.extendleft(array) : 맨 왼쪽에 리스트의 요소들을 순회하면서 추가한다.
-> deque.remove(item) : deque안에 item 요소를 삭제한다.
+> deque.append(item) : item을 오른쪽에 넣는다.  
+> deque.appendleft(item) : item을 왼쪽에 넣는다.  
+> deque.pop() : 맨 오른쪽 item을 리턴하는 동시에 삭제한다.  
+> deque.popleft() : 맨 왼쪽 item을 리턴하는 동시에 삭제한다.  
+> deque.extend(array) : 맨 오른쪽에 리스트의 요소들을 순회하면서 추가한다.  
+> deque.extendleft(array) : 맨 왼쪽에 리스트의 요소들을 순회하면서 추가한다.  
+> deque.remove(item) : deque안에 item 요소를 삭제한다.  
 > deque.rotate(num) : deque안에서 num만큼 회전시킨다. (양수 : 오른쪽 / 음수 : 왼쪽)

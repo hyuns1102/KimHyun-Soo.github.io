@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 모의고사"
 categories: programmers
-tags: programmers python BF
+tags: programmers python bf
 published: true
 ---
 
@@ -15,6 +15,7 @@ published: true
 
 ### 풀이
 
+**완전 탐색(Brute Force)**
 1번 수포자, 2번 수포자, 3번 수포자가 찍는 방식이 정해져 있고,  
 문제의 정답이 주어질 때, 답을 가장 많이 맞춘 사람을 출력한다.  
 단, 여러 사람일 경우 오름차순 출력한다.  

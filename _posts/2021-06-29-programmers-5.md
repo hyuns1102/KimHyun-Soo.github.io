@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 모의고사"
 categories: programmers
-tags: programmers python
+tags: programmers python BF
 published: true
 ---
 

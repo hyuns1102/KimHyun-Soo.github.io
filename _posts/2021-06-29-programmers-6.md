@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 소수찾기"
 categories: programmers
-tags: programmers python
+tags: programmers python bf
 published: true
 ---
 
@@ -15,6 +15,7 @@ published: true
 
 ### 풀이
 
+**완전 탐색(Brute Force)**
 숫자가 적혀있는 종이가 주어졌을 때, 모든 조합을 고려하여 소수의 개수를 찾는 문제이다.  
 (11과 011은 같은 숫자로 취급)  
 생각해야할 점은

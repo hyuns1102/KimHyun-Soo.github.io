@@ -11,13 +11,13 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme: "minimal-mistakes-jekyll"
-theme: "jekyll-theme-minimal"
+# theme: "jekyll-theme-minimal"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko"
-title: "공부 블로그 : Always I do💻📚🏋️‍♀️"
+title: "Always I 💻📚🏋️‍♀️"
 title_separator:
 subtitle: # site tagline that appears below site title in masthead
 name: "Hyun Soo"

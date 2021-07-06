@@ -1,6 +1,6 @@
 ---
-title: "[네이버 부스트 캠프] AI Pre Course"
-categories: codingtest
+title: "[네이버 부스트 캠프] AI PreCourse"
+categories: AI
 tags: python
 published: true
 ---
@@ -72,7 +72,7 @@ from collections import defaultdict
 from collections import namedtuple
 ```
 
-deuqe
+deque
 
 - Stack과 Queue 를 지원하는 모듈
 - List에 비해 효율적인=빠른 자료 저장 방식을 지원함

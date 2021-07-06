@@ -17,11 +17,11 @@ main:
   # - title: "Home"
   #   url: https://hyuns1102.github.io/
 
-  - title: "About"
-    url: /About/
+  # - title: "About"
+  #   url: /About/
 
-  - title: "Posts"
-    url: /year-archive/
+  # - title: "Posts"
+  #   url: /year-archive/
 
   # - title: "Javascript"
   #   url: /javaScript/
@@ -40,7 +40,6 @@ main:
 
   - title: "Blog"
     url: https://blog.naver.com/hyuns_1102
-
 #Test
 # foo:
 #   - title: "Parent Link 1"

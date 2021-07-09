@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 카펫"
 categories: programmers
-tags: programmers python dp
+tags: programmers python bf
 published: true
 ---
 

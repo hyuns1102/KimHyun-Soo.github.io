@@ -70,3 +70,9 @@ def solution(citations):
   봤더니 파악할 수 있었다.  
   <br>
   아직도 부족한게 많다...
+
+- 배운점:  
+  다른 사람 풀이에서 enumerate(list, start=1)을 쓰는 것을 봤다.  
+  이 때의 결과는 `(1, list[0]), (2, list[1]), (3, list[2]) ..`  
+  이다.  
+  object로 반환되므로 list를 씌웠을 때 tuple 값을 볼 수 있다.

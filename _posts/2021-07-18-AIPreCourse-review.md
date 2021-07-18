@@ -2,7 +2,7 @@
 title: "[네이버 부스트 캠프] AI-Tech 합격"
 categories: AI
 tags: python
-published: True
+published: true
 ---
 
 ## AI-Tech 합격

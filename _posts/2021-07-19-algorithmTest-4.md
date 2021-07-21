@@ -1,7 +1,7 @@
 ---
 title: "[이코테 2021] 이진 탐색"
 categories: codingtest
-tags: python
+tags: python binarysearch
 published: true
 # use_math: true
 # comments: true
@@ -22,12 +22,12 @@ published: true
 이진 탐색은 한 번 확인할 때마다 확인하는 원소의 개수가 절반씩 줄어든다는 점에서 시간 복잡도가 $$\log_2 N$$ 이다.
 <br>
 이진 탐색 구현 방법 2가지  
-이 두 가지 방법은 가능한 외워두자. 간단할 수 있지만, 응용 문제 시에 시간을 단축시키는데 좋다.  
+이 두 가지 방법은 가능한 외워두자. 간단할 수 있지만, 응용 문제 시에 시간을 단축시키는데 좋다.
 
 ```python
 # 이진 탐색 소스코드 구형(재귀 함수)
 def binary_search(array, target, start, end):
-  # start (시작점)가 end(끝점)을 넘어가면 None 
+  # start (시작점)가 end(끝점)을 넘어가면 None
   if start > end:
     return None
   mid = (start + end) // 2
@@ -54,7 +54,7 @@ else:
 ```python
 # 이진 탐색 소스코드 구형(반복문)
 def binary_search(array, target, start, end):
-  # start (시작점)가 end(끝점)을 넘어가면 None 
+  # start (시작점)가 end(끝점)을 넘어가면 None
   while start <= end:
       mid = (start + end) // 2
       if array[mid] == target:

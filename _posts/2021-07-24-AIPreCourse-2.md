@@ -1,12 +1,8 @@
 ---
-title: "[네이버 부스트 캠프] AI-Tech - week5"
+title: "[네이버 부스트 캠프] AI-Tech - week5(1)"
 categories: AI
 tags: python
 published: true
----
-
-## week5
-
 ---
 
 ### Docker

@@ -1,5 +1,5 @@
 ---
-title: "[네이버 부스트 캠프] AI-Tech - week5"
+title: "[네이버 부스트 캠프] AI-Tech - week5(2)"
 categories: AI
 tags: python
 published: true
@@ -103,7 +103,7 @@ use_math: true
 
       위의 식을 코드로 나타내면 다음과 같다.  
 
-      ```python 
+      ```python
       gradient = torch.sum((W * x_train - y_train) * x_train)
       lr = 0.1
       W -= lr * gradient

@@ -167,7 +167,7 @@ accuracy = correct_prediction.sum().item() / len(correct_prediction)
 print('The model has an accuracy of {:2.2f}% for the training set.'.format(accuracy * 100))
 ```
 
-### 5. nn & nn.functional
+### 6. nn & nn.functional
 
 지금까지 했던 이론을 torch.nn, nn.module을 이용하여 상속을 통한 customizing을 이용해서 model의 학습을 간단히 한다.  
 

@@ -69,26 +69,171 @@ use_math: true
   ```
   
   3) hypothesis 크기의 y_one_hot vector를 만들어준다.  
+     one_hot_vector는 표현하고자 하는 값(y)을 인덱스로 하는 위치에 1로 나타내고 나머지는 0으로 나타내는 vector를 말한다.  
+     [0, 1, 2] -> [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
   ```python
   y_one_hot = torch.zeros_like(hypothesis)
-  print(y_one_hot)
   y_one_hot.scatter_(1, y.unsqueeze(1), 1)
+  # scatter : dim, index, src
+  # : dim = 1 방향으로 (가로 방향) src를 index에 집어 넣는다. 
   print(y_one_hot)
-  ``` 
 
-  4) 이 때의 cost function은 위의 이론에 따라 cross entropy에 의해, 다음과 같이 나타낼 수 있다.  
+  #tensor([[1.3301, 1.8084, 1.6846, 1.3530, 2.0584],
+  #      [1.4147, 1.8174, 1.4602, 1.6450, 1.7758],
+  #      [1.5025, 1.6165, 1.4586, 1.8360, 1.6776]], grad_fn=<NegBackward>)
+  ```
+
+  4) 이 때의 cost function은 위의 이론에 따라 cross entropy에 의해, 다음과 같이 나타낼 수 있다. 예측값과 실제값이 얼마나 다른지를 알 수 있다. (1이면 예측을 정확히 했다.)
 
   ```python
   cost = (y_one_hot * -torch.log(hypothesis)).sum(dim=1).mean()
+  print(cost)
+
+  #tensor(1.4689, grad_fn=<MeanBackward1>)
   ```
 
 
-### 3. Computing the Cost Function & Binary cross entropy
-
- 
-### 4. Full Code
+### 3. Cross Entropy Loss with torch.nn.functional
   
-### 5. Checking the Accuracy
+  Pytorch에는 위의 식들을 더 간단하게 구현하기 위한 함수들이 존재한다.  
 
-### 6. nn & nn.functional
+  ```python
+  import torch.nn as nn
+  import torch.nn.functional as F
+  ```
+
+  1) F.softmax() + torch.log() = F.log_softmax
+
+  ```python
+  torch.log(F.softmax(z, dim = 1)) # low - level
+  F.log_softmax(z, dim = 1) # High - level
+  ```
+
+  2) F.nll_loss : the negative log likelihood loss
+  cross entropy 구하는 과정을 softmax와 nll_loss 를 이용
+
+  ```python
+  (y_one_hot * -torch.log(F.softmax(z, dim=1))).sum(dim=1).mean() # low - level
+  F.nll_loss(F.log_softmax(z, dim=1), y) # high - level
+  ```
+
+  3) F.log_softmax() + F.nll_loss() = F.cross_entropy()
+
+  ```python
+  F.cross_entropy(z, y)
+  ```
+
+### 4. Full Code & nn.module
+  
+  Low level
+
+  ```python
+  import torch
+  import torch.nn as nn
+  import torch.nn.functional as F
+  import torch.optim as optim
+
+  torch.manual_seed(1)
+  z = torch.rand(3, 5, requires_grad=True)
+  y = torch.randint(5, (3,)).long()
+  y_one_hot = torch.zeros_like(hypothesis)
+  y_one_hot.scatter_(1, y.unsqueeze(1), 1)
+  
+  ```
+
+  ```python
+  # 모델 초기화
+  W = torch.zeros((4, 3), requires_grad=True)
+  b = torch.zeros(1, requires_grad=True)
+  # optimizer 설정
+  optimizer = optim.SGD([W, b], lr=0.1)
+
+  nb_epochs = 1000
+  for epoch in range(nb_epochs + 1):
+
+    # Cost 계산 (1)
+    hypothesis = F.softmax(x_train.matmul(W) + b, dim=1) # or .mm or @
+    y_one_hot = torch.zeros_like(hypothesis)
+    y_one_hot.scatter_(1, y_train.unsqueeze(1), 1)
+    cost = (y_one_hot * -torch.log(F.softmax(hypothesis, dim=1))).sum(dim=1).mean() # 왜 두번이나 softmax를 하는 것인가? 아무리 생각해도 잘못 나온 느낌이다. 그 다음에 cross entropy를 이용했을 때랑 정답이 다르다.  
+    cost = (y_one_hot * -torch.log(hypothesis)).sum(dim=1).mean()
+
+    # cost로 H(x) 개선
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step()
+
+    # 100번마다 로그 출력
+    if epoch % 100 == 0:
+        print('Epoch {:4d}/{} Cost: {:.6f}'.format(
+            epoch, nb_epochs, cost.item()
+        ))
+  ```
+
+  High Level
+
+  ```python
+  # 모델 초기화
+  W = torch.zeros((4, 3), requires_grad=True)
+  b = torch.zeros(1, requires_grad=True)
+  # optimizer 설정
+  optimizer = optim.SGD([W, b], lr=0.1)
+
+  nb_epochs = 1000
+  for epoch in range(nb_epochs + 1):
+
+    # Cost 계산 (2)
+    z = x_train.matmul(W) + b # or .mm or @
+    cost = F.cross_entropy(z, y_train)
+
+    # cost로 H(x) 개선
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step()
+
+    # 100번마다 로그 출력
+    if epoch % 100 == 0:
+        print('Epoch {:4d}/{} Cost: {:.6f}'.format(
+            epoch, nb_epochs, cost.item()
+        ))
+  ```
+
+  nn.Module, 상속을 통한 customizing
+
+  ```python
+  class SoftmaxClassifierModel(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.linear = nn.Linear(4, 3) # Output이 3!
+        # multi classification 에서 linear 함수가 맞는건가? 결과가 다른데..
+
+    def forward(self, x):
+        return self.linear(x)
+  ```
+
+  ```python
+  model = SoftmaxClassifierModel()
+  # optimizer 설정
+  optimizer = optim.SGD(model.parameters(), lr=0.1)
+
+  nb_epochs = 1000
+  for epoch in range(nb_epochs + 1):
+
+    # H(x) 계산
+    prediction = model(x_train)
+
+    # cost 계산
+    cost = F.cross_entropy(prediction, y_train)
+
+    # cost로 H(x) 개선
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step()
+    
+    # 20번마다 로그 출력
+    if epoch % 100 == 0:
+        print('Epoch {:4d}/{} Cost: {:.6f}'.format(
+            epoch, nb_epochs, cost.item()
+        ))
+  ```

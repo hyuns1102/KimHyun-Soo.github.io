@@ -237,6 +237,8 @@ dataloader = DataLoader(
 
 ### 4. Full Code
 
+위의 식을 토대로 전체 코드를 짜면 다음과 같다.  
+
 ```python
 
 nb_epochs = 20

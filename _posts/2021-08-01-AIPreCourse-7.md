@@ -7,7 +7,7 @@ use_math: true
 ---
 
 ## Tips
-  
+
   이제 우리는 학습할 때 고려해야할 것들에 대해서 알아본다.  
   Maximum Likelihood Estimation  
   optimization via Gradient Descent  

@@ -1,6 +1,6 @@
 ---
 title: "[네이버 부스트 캠프] AI-Tech - 통계학 맛보기"
-categories: AI
+categories: AI precourse
 tags: python
 published: true
 ---

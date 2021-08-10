@@ -1,6 +1,6 @@
 ---
 title: "[네이버 부스트 캠프] AI-Tech 합격"
-categories: AI
+categories: AI precourse
 tags: python
 published: true
 ---

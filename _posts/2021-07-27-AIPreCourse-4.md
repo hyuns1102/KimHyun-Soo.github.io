@@ -1,6 +1,6 @@
 ---
 title: "[네이버 부스트 캠프] AI-Tech - week5(3)"
-categories: AI
+categories: AI precourse
 tags: python
 published: true
 use_math: true

@@ -1,6 +1,6 @@
 ---
 title: "우선 순위 큐"
-categories: BOJ
+categories: Algorithm
 tags: BOJ priorityQueue heap
 published: true
 ---

@@ -55,6 +55,14 @@
                 {% endfor %}
             </ul>
 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "CV" %}
+                        <li><a href="/categories/CV" class=""> AI-CV ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
 
         <span class="nav__sub-title">Coding Test</span>
             <ul>

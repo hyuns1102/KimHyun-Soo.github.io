@@ -19,6 +19,7 @@ $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 $newfont: "BinggraeSamanco-Bold" !default;
 $newfont2: "MapoGoldenPier" !default;
+$newfont3 : "SpoqaHanSansNeo-Regular" !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -32,8 +33,8 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $newfont2 !default;// $sans-serif !default;
-$header-font-family: $newfont2 !default; // $sans-serif !default;
+$global-font-family: $newfont3 !default;// $sans-serif !default;
+$header-font-family: $newfont3 !default; // $sans-serif !default;
 $caption-font-family: $serif !default;
 
 /* type scale */

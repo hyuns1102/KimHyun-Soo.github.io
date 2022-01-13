@@ -2,7 +2,7 @@
 title: "JavaScript-2-Dday"
 categories: JavaScript
 tags: blog JavaScript
-published: False
+published: true
 
 ---
 

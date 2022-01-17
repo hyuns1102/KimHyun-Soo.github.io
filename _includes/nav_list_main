@@ -76,22 +76,23 @@
 
 
         <span class="nav__sub-title">Coding Test</span>
+
             <ul>
+                <!-- {% comment %} "{{}}" : means print & for loop sum arrays way below {% endcomment %} -->
+                {% assign counts_c = 0 %}
+                {% for category in site.categories %}
+                    {% if category[0] == "BOJ" or category[0] == "programmers" %}
+                        {% assign counts_c = counts_c | plus: category[1].size %}
+                    {% endif %}
+                {% endfor %}
                 {% for category in site.categories %}
                     {% if category[0] == "BOJ" %}
-                        <li><a href="/categories/BOJ" class=""> [백준] (with C++, Python) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/BOJ" class=""> [백준 & 프로그래머스] (with C++, Python) ({{counts_c}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
 
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "programmers" %}
-                        <li><a href="/categories/programmers" class=""> [프로그래머스] (with Python) ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
+            
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "codingtest" %}

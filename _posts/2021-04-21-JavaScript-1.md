@@ -41,7 +41,7 @@ published: true
 - Array : It's a way to store data on a list format
   ex)
   ```javascript
-  con st woman = [["hi", "this", "is"], "my", "name"];
+  const woman = [["hi", "this", "is"], "my", "name"];
   ```
 
 - Object : It's a way to store information on a key-value format
